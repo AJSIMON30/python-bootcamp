@@ -12,3 +12,5 @@ print("Counter:", counter)
 # TODO: Decrease the score by 4
 # TODO: Change code here
 print("Counter:", counter)
+
+

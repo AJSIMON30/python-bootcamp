@@ -17,3 +17,11 @@ number = 3
 3 x 9 = 27
 3 x 10 = 30
 """
+
+def func(number):
+
+    for factor in range(1,11):
+        total = number * (factor)
+        print(number, "x", factor, "=", int(total))
+
+func(number)

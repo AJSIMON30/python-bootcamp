@@ -1,5 +1,5 @@
 # TODO: Ask the user for an input that should be a number
-number = input("Enter number: ")
+
 
 # TODO: Then try to convert this into an integer using the following:
 number_converted = int(number)
@@ -11,3 +11,10 @@ number_converted = int(number)
 # TODO: Handle this case
 
 # Challenge: TODO: Give the user infinite times to retry
+
+try:
+    for_convert = input("Enter number: ")
+    number
+    print(number)
+except ValueError:
+    print("Enter valid number!")

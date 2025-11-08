@@ -1,7 +1,12 @@
 items = ["rice", "noodles", "toyo", "spam", "coffee"]
-item_to_find = "spam"
+item_to_find = "toyo"
+
+item_found = False
 
 for item in items:
-    # TODO: If item equals the item_to_find
-    #  # print and exit loop
-    pass
+    print(">")
+    if item == item_to_find:
+
+        print(item)
+        continue
+

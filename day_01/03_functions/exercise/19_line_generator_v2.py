@@ -7,3 +7,11 @@
 """
 
 # TODO: Use the function once
+
+def qwe(asd):
+
+    for num in range(asd):
+        print("Line ", num + 1)
+
+qwe(5)
+

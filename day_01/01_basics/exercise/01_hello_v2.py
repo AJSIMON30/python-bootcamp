@@ -2,3 +2,5 @@
 # Use variables for the name and programming language
 # Hello! My name is Jeff
 # I am learning Python
+total : int = 9999
+print(total)
