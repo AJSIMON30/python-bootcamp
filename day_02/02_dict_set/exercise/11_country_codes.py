@@ -2,6 +2,12 @@
 country_codes = {
     "PH": "Philippines",
     "US": "United States",
-}
+    "SK": "South Korea",
+    "NK": "North Korea",
 
-print(country_codes)
+}
+try:
+    print(country_codes["PH"])
+except KeyError:
+    print("Country not found")
+

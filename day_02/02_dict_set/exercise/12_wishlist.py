@@ -1,7 +1,10 @@
 # TODO: Fill in the details of the item you plan to buy
-order = {
-    "Name": ...,
-    "Info": ...,
+orders = {
+    "item": "apple",
+    "type": "fruit",
+    "price_kilo": 100,
+    "price_pc": 20,
+    "sale": True
 }
 
 # TODO: Print the item details in the following format:
@@ -11,3 +14,12 @@ Order:
 	Info: item info
 	...
 """
+
+def print_order(order):
+
+
+    for order in orders:
+        print("order:")
+        for field, details in orders.items():
+            print(f"{field}: {details}")
+
