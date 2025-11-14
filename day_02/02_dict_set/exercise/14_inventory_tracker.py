@@ -23,8 +23,11 @@ def remove(inventory):
         Remove item in that index in inventory
     """
     index = int(input("Item index: "))
-
-    inventory.pop(index)
+    if 0 <= index < len(inventory):
+        rem_item = inventory.pop(index)
+        print(f"Item Removed: {rem_item}")
+    else:
+        print("Invalid index! No Item Removed")
 
 def read(inventory):
     """TODO:
@@ -32,7 +35,10 @@ def read(inventory):
                 Show item in that index in inventory
     """
     index = int(input("Item index: "))
-    print(inventory[index])
+    if 0 <= index < len(inventory):
+        print(inventory[index])
+    else:
+        print("Invalid index")
 
 def print_item(item):
     for field in item:
@@ -47,9 +53,10 @@ def save(inventory):
     with open('inventory.json', 'w') as file:
         json.dump(inventory, file)
 
-def load():
+def load(inventory):
     with open('inventory.json', 'r') as file:
         return json.load(file)
+
 
 def main():
     """Created to test functions"""
@@ -74,8 +81,24 @@ def main():
             # TODO: Use show command"""
             show(inventory)
             pass
+        elif command == "save":
+            save(inventory)
+            pass
+        elif command == "load":
+            inventory = load(inventory)
+            print(f" Loaded {inventory} items")
+            pass
         elif command == "exit":
             running = False
 
+
+
+def print_order(order):
+    for field, details in orders.items():
+        print(f"{field}: {details}")
+
+for order in orders:
+    print_order(order)
+    break
 
 main()

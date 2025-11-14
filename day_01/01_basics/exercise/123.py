@@ -1,8 +1,36 @@
-with open('sample.txt','r') as file:
-    user = file.readlines()
-    print(user)
+def get_longest_word(text):
+    # Split the text into words
+    words = text.split()
+
+    # Initialize the variable to store the longest word
+    longest_word = None
+
+    # Loop through each word to find the longest one
+    for word in words:
+        if longest_word is None or len(word) > len(longest_word):
+            longest_word = word
+
+    # Return the longest word
+    return longest_word
 
 
+# Test examples
+fox = "The quick brown fox jumps"
+python = "I love programming in Python!"
+
+print("Longest word in quick:", get_longest_word(fox))
+print("Longest word in programming:", get_longest_word(python))
+
+
+
+
+
+
+# with open('sample.txt','r') as file:
+#     user = file.readlines()
+#     print(user)
+#
+#
 
 # file = open('sample.txt', 'w')
 #

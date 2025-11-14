@@ -48,5 +48,6 @@ def main():
             save(expenses)
         elif command == "load":
             expenses = load()
-
+        elif command == "exit":
+            running = False
 main()

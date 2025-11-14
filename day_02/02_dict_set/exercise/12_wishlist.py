@@ -16,10 +16,9 @@ Order:
 """
 
 def print_order(order):
+    for field, details in orders.items():
+        print(f"{field}: {details}")
 
-
-    for order in orders:
-        print("order:")
-        for field, details in orders.items():
-            print(f"{field}: {details}")
-
+for order in orders:
+    print_order(order)
+    break

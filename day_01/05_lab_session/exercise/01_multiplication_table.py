@@ -18,7 +18,6 @@ number = 3
 3 x 10 = 30
 """
 def func(num):
-    for factor in range(1,11):
-        print(number,"x",factor,"=",number*factor)
-
-func(0)
+    for factor in range(1,31):
+        print(f"{number} x {factor} = {number*factor}")
+func(1)
