@@ -6,10 +6,7 @@ def get_longest_word(text):
     words = text.split()
     longest_word = None
 
-# quick1 = quick.split()
-# prog1 = programming.split()
-# print(quick1)
-# print(prog1)
+
     for word in words:
         if longest_word is None or len(word) > len(longest_word):
             longest_word = word
